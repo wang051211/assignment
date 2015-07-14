@@ -8,10 +8,10 @@ public class Area {
 			return pi*r*r ;
 		}
 		public static void main(String[] args){
-			System.out.print("半径r为：");
+			System.out.print("r:");
 		    Scanner sc=new Scanner(System.in);
 			double r=sc.nextDouble();
-			System.out.println("面积为："+getArea(r));
+			System.out.println("area:"+getArea(r));
 	}
 
 }
