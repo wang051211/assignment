@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class Average {
 	public static double averageScore(ArrayList<Integer> scores) {
-
 		int length = scores.size();
 		double sum = 0;
 		double aver = 0;
@@ -32,7 +31,6 @@ public class Average {
 
 		aver = sum / length;
 		return aver;
-
 	}
 
 	public static void main(String[] args) {
@@ -45,7 +43,5 @@ public class Average {
 			ai.add(Integer.parseInt(str[i]));
 		}
 		System.out.println("平均成绩为：" + averageScore(ai));
-
 	}
-
 }
