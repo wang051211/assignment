@@ -24,84 +24,85 @@ public class IdentityCard {
 		Scanner s = new Scanner(System.in);
 		String str = s.next();
 		String[] number = str.split(",");
-		/*
-		 * if ((str.length()) != 18) { System.out.println();
-		 * System.out.print("输入有误！请重新输入："); str = s.nextLine(); }
-		 */
+		if ((number.length) != 18) { 
+			System.out.println();
+		    System.out.print("输入有误！请重新输入："); 
+		    str = s.nextLine();
+	    }
+		 
 		for (int i = 0; i < number.length; i++) {
 			ai.add(Integer.parseInt(number[i]));
 		}
 		System.out.println(isIdentityCard(ai));
 		switch (isIdentityCard(ai)) {
 		case 0:
-			if (number[17] == "1")
+			if ("1".endsWith(number[17]))
 				System.out.println("身份证合法！");
 			else
 				System.out.println("身份证不合法！");
 			break;
 
 		case 1:
-			if (number[17] == "0")
+			if ("0".endsWith(number[17]))
 				System.out.println("身份证合法！");
 			else
 				System.out.println("身份证不合法！");
 			break;
 		case 2:
-			if (number[17] == "x")
+			if ("x".endsWith(number[17]))
 				System.out.println("身份证合法！");
 			else
 				System.out.println("身份证不合法！");
 			break;
 
 		case 3:
-			if (number[17] == "9")
+			if ("9".endsWith(number[17]))
 				System.out.println("身份证合法！");
 			else
 				System.out.println("身份证不合法！");
 			break;
 		case 4:
-			if (number[17] == "8")
+			if ("8".endsWith(number[17]))
 				System.out.println("身份证合法！");
 			else
 				System.out.println("身份证不合法！");
 			break;
 		case 5:
-			if (number[17] == "7")
+			if ("7".endsWith(number[17]))
 				System.out.println("身份证合法！");
 			else
 				System.out.println("身份证不合法！");
 			break;
 		case 6:
-			if (number[17] == "6")
+			if ("6".endsWith(number[17]))
 				System.out.println("身份证合法！");
 			else
 				System.out.println("身份证不合法！");
 			break;
 		case 7:
-			if (number[17] == "5")
+			if ("5".endsWith(number[17]))
 				System.out.println("身份证合法！");
 			else
 				System.out.println("身份证不合法！");
 			break;
 		case 8:
-			if (number[17] == "4")
+			if ("4".endsWith(number[17]))
 				System.out.println("身份证合法！");
 			else
 				System.out.println("身份证不合法！");
 			break;
 		case 9:
-			if (number[17] == "3")
+			if ("3".endsWith(number[17]))
 				System.out.println("身份证合法！");
 			else
 				System.out.println("身份证不合法！");
 			break;
 		case 10:
-			if (number[17] == "2")
+			if ("2".endsWith(number[17]))
 				System.out.println("身份证合法！");
 			else
 				System.out.println("身份证不合法！");
 			break;
-
 		}
 	}
 }
