@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+
+   <style type="text/css"">
+      .img_change{
+           width:630px;
+	       height:250px;
+      }
+
+   </style>
+   <script type="text/javascript">
+    var imglist=new Array(6)
+   imglist[0]="E:\images/screen1.jpg";  
+   imglist[1]="E:\images/screen2.jpg";
+   imglist[2]="E:\images/screen3.jpg";
+   imglist[3]="E:\images/screen4.jpg";
+   imglist[4]="E:\images/screen5.jpg";
+   imglist[5]="E:\images/screen6.jpg";
+  var i=0;
+  function changeimg()
+ {
+      if(i==imglist.length)
+      {
+          i=0;
+      }
+ document.getElementById("tp").src=imglist[i];
+ ++i;
+}
+   window.setInterval("changeimg()",2000)
+
+</script>
+
+ </head>
+ <body  onload="changeimg()">
+     <img src="E:\images/screen1.jpg" name="tp" id="tp" width="620px"
+	   height="230px"></img>
+ </body>
+</html>
